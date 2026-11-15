@@ -25,7 +25,10 @@ export default function GlobalMap() {
             zoomControl={true}
             attributionControl={false}
           >
-            <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png"/>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
             {mapMarkers.map((m, i) => (
               <>
                 <CircleMarker
