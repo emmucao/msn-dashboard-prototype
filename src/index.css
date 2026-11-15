@@ -1,6 +1,18 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body, #root { width: 100%; height: 100%; overflow: hidden; }
-body { font-family: 'Figtree', system-ui, sans-serif; background: #f3f0eb; color: #1a1a1a; font-size: 15px; }
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+body {
+  position: fixed;
+  inset: 0;
+  font-family: 'Figtree', system-ui, sans-serif;
+  background: #f3f0eb;
+  color: #1a1a1a;
+  font-size: 15px;
+}
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #d8d3cc; border-radius: 4px; }
